@@ -1,5 +1,4 @@
 import numpy as np
-import nltk
 import string
 import streamlit as st
 from sklearn.preprocessing import LabelEncoder
