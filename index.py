@@ -1,9 +1,8 @@
-from sklearn.calibration import LabelEncoder
-import streamlit as st
+import numpy as np
 import nltk
 import string
+from sklearn.preprocessing import LabelEncoder
 import pandas as pd
-from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
