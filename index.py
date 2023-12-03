@@ -1,6 +1,7 @@
 import numpy as np
 import nltk
 import string
+import streamlit as st
 from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 from nltk.corpus import stopwords
@@ -14,7 +15,6 @@ nltk.download('punkt')
 nltk.download('stopwords')
 df = pd.read_csv('spam.csv', encoding='latin-1')
 # # Reading Dataset
-# @st.experimental_memo
 def load_data(df):
     df.drop(columns=['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], inplace=True)
     df.rename(columns={'v1': 'target', 'v2': 'text'}, inplace=True)
